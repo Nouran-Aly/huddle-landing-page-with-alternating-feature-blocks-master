@@ -1,0 +1,194 @@
+:root{
+    /* primary */
+    --Pink: hsl(322, 100%, 66%);
+    /* Neutral */
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+button:hover{
+    background-color: var(--Pink);
+    cursor: pointer;
+}
+.landing{
+    background-image: url(/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-color: var(--Very-Pale-Cyan);
+    padding: 20px 100px;
+}
+.landing .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.landing .header .free{
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: none;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-weight: 600;
+}
+.landing .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.landing .content .left{
+    width: 500px;
+}
+.landing .content .left h3{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.landing .content .left p{
+    font-weight: 400;
+    padding: 20px 0 30px;
+    line-height: 1.8;
+}
+.landing .content .left .start{
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--Pink);
+}
+.landing .content .right img{
+    width: 700px;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 150px;
+}
+.page .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    padding: 50px 30px;
+    margin: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.page .container .text{
+    width: 450px;
+}
+.page .container .text .head{
+    font-size: 20px;
+    font-weight: bold; 
+    padding-bottom: 20px;
+}
+.page .container .text .paragraph{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+.page .container img{
+    width: 400px;
+}
+.question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question-box{
+    width: 600px;
+    height: 175px;
+    padding: 30px 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 20px;
+    margin: -100px;
+}
+.question-box .last-btn{
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--Pink);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.footer{  
+    background-color: var(--Very-Dark-Cyan);
+    padding: 130px 100px 80px;
+    color: white;
+}
+.footer svg{  
+    margin-bottom: 30px;
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+}
+.grid-footer .foot-left .logo img{
+    color: var(--Pink);
+    background-color: rgb(67, 127, 127);
+}
+.grid-footer .foot-left .lines{
+    display: flex;
+    justify-content: flex-start;
+    align-items: first baseline;
+    margin-bottom: 20px;
+}
+.grid-footer .foot-left .lines img{
+    padding-right: 20px;
+}
+.grid-footer .foot-left .lines p{
+    text-align: left;
+    width: 375px;
+    color: var(--Grayish-Blue);
+}
+.grid-footer .middle{
+    display: flex;
+    justify-content: space-around;
+    line-height: 2.5;
+    color: var(--Grayish-Blue);
+}
+.grid-footer .foot-right .social-media i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background-color: var(--Very-Dark-Cyan);
+    border-radius: 50%;
+    border: 2px solid var(--Grayish-Blue);
+    text-align: center;
+}
+.footer .copy{
+    text-align: right;
+}
